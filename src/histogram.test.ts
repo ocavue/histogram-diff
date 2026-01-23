@@ -1,13 +1,12 @@
-import {
-  describe,
-  expect,
-  test,
-} from 'vitest'
+import { describe, expect, test } from 'vitest'
 
 import { formatDiff } from './format'
 import { histogramDiff } from './histogram'
 
-function visualizeDiff(inputA: string | string[], inputB: string | string[]): string {
+function visualizeDiff(
+  inputA: string | string[],
+  inputB: string | string[],
+): string {
   const fileA = typeof inputA === 'string' ? inputA.split('') : inputA
   const fileB = typeof inputB === 'string' ? inputB.split('') : inputB
 
@@ -16,7 +15,7 @@ function visualizeDiff(inputA: string | string[], inputB: string | string[]): st
   const sortedDiffs = diffs.slice().sort((x, y) => x[0] - y[0])
   expect(sortedDiffs).toEqual(diffs)
 
-  return "\n" + formatDiff(fileA, fileB, diffs) + "\n"
+  return '\n' + formatDiff(fileA, fileB, diffs) + '\n'
 }
 
 describe('histogramDiff', () => {
@@ -178,11 +177,7 @@ describe('histogramDiff', () => {
   })
 
   test('real code: add line', () => {
-    const fileA = [
-      'function hello() {',
-      '  console.log("hello");',
-      '}',
-    ]
+    const fileA = ['function hello() {', '  console.log("hello");', '}']
     const fileB = [
       'function hello() {',
       '  console.log("hello");',
@@ -200,16 +195,8 @@ describe('histogramDiff', () => {
   })
 
   test('real code: modify line', () => {
-    const fileA = [
-      'function greet(name) {',
-      '  return "Hello, " + name;',
-      '}',
-    ]
-    const fileB = [
-      'function greet(name) {',
-      '  return `Hello, ${name}!`;',
-      '}',
-    ]
+    const fileA = ['function greet(name) {', '  return "Hello, " + name;', '}']
+    const fileB = ['function greet(name) {', '  return `Hello, ${name}!`;', '}']
     expect(visualizeDiff(fileA, fileB)).toMatchInlineSnapshot(`
       "
         function greet(name) {
@@ -266,7 +253,8 @@ describe('histogramDiff', () => {
   })
 
   test('LCS contains unique', () => {
-    expect(visualizeDiff('nqnjrnjsnm', 'AnqnjrnjsnjTnmZ')).toMatchInlineSnapshot(`
+    expect(visualizeDiff('nqnjrnjsnm', 'AnqnjrnjsnjTnmZ'))
+      .toMatchInlineSnapshot(`
       "
       + A
         n

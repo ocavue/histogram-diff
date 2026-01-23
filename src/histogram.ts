@@ -11,7 +11,6 @@ export type Region = [aLo: number, aHi: number, bLo: number, bHi: number]
 
 const MAX_CHAIN_LENGTH = 64
 
-
 /**
  * Compares two files and returns a list of regions that are different.
  */
@@ -67,7 +66,7 @@ function findBestMatchingRegionIn<T>(
   let bestMatchLength = 0
   let bestLowCount = MAX_CHAIN_LENGTH
 
-  for (let b = BLo; b < BHi;) {
+  for (let b = BLo; b < BHi; ) {
     const lineB = fileB[b]
     const aFirstIndex = aFirstIndexMap.get(lineB)
 
