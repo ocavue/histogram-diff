@@ -85,7 +85,7 @@ Compares two arrays and returns a list of regions that are different.
 - `fileB` - The second array (modified)
 - Returns an array of `Region` tuples representing the differences
 
-### `formatDiff(fileA: string[], fileB: string[], diffs: Region[]): string`
+### `formatDiff<T = string>(fileA: T[], fileB: T[], diffs: Region[]): string`
 
 Formats the diff output into a human-readable string with `+` and `-` markers.
 

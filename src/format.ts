@@ -20,9 +20,9 @@ import type { Region } from './histogram'
  * // + e
  * ```
  */
-export function formatDiff(
-  fileA: string[],
-  fileB: string[],
+export function formatDiff<T = string>(
+  fileA: T[],
+  fileB: T[],
   diffs: Region[],
 ): string {
   let a = 0
