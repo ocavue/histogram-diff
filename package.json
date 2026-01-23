@@ -1,7 +1,7 @@
 {
   "name": "histogram-diff",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@10.26.2",
   "description": "TypeScript starter kit",
   "author": "ocavue <ocavue@gmail.com>",
