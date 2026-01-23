@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/histogram-diff?color=a1b858&label=)](https://www.npmjs.com/package/histogram-diff)
 
-A TypeScript implementation of the [histogram diff algorithm](https://git-scm.com/docs/diff-options/2.6.7#Documentation/diff-options.txt---histogram).
+A TypeScript implementation of the [histogram diff algorithm](https://git-scm.com/docs/diff-options/2.52.0#Documentation/diff-options.txt-histogram).
 
 ## Installation
 
