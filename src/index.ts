@@ -1,2 +1,7 @@
-export const one = 1
-export const two = 2
+export {
+    type Region,
+    histogramDiff    
+} from './histogram'
+export {
+    formatDiff
+} from './format'
