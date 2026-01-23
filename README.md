@@ -4,6 +4,17 @@
 
 A TypeScript implementation of the [histogram diff algorithm](https://git-scm.com/docs/diff-options/2.52.0#Documentation/diff-options.txt-histogram).
 
+## What is Histogram Diff
+
+Histogram diff is a diff algorithm introduced by the jgit project in 2010, based on Bram Cohen's patience diff. It is used by Git as one of its diff algorithms (`git diff --histogram`).
+
+Compared to traditional algorithms like Myers, histogram diff produces more readable output by grouping related changes together rather than scattering them across the file.
+
+To learn more about how it works:
+
+- [How "histogram diff" actually works](https://www.raygard.net/2025/01/28/how-histogram-diff-works/)
+- [More on "histogram diff", and a working program](https://www.raygard.net/2025/01/29/a-histogram-diff-implementation/)
+
 ## Installation
 
 ```bash
