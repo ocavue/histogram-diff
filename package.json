@@ -2,7 +2,7 @@
   "name": "histogram-diff",
   "type": "module",
   "version": "0.1.1",
-  "packageManager": "pnpm@10.28.1",
+  "packageManager": "pnpm@11.5.2",
   "description": "A TypeScript implementation of the histogram diff algorithm",
   "author": "ocavue <ocavue@gmail.com>",
   "license": "MIT",
@@ -45,13 +45,13 @@
     "typecheck": "tsc -b"
   },
   "devDependencies": {
-    "@ocavue/eslint-config": "^3.9.2",
-    "@ocavue/tsconfig": "^0.6.2",
-    "@types/node": "^20.19.10",
-    "eslint": "^9.39.2",
+    "@ocavue/eslint-config": "^4.0.0",
+    "@ocavue/tsconfig": "^0.7.1",
+    "@types/node": "^24.0.0",
+    "eslint": "^10.0.0",
     "prettier": "^3.8.1",
-    "tsdown": "^0.20.1",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.18"
+    "tsdown": "^0.22.2",
+    "typescript": "^6.0.3",
+    "vitest": "^4.0.0"
   }
 }
