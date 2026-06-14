@@ -45,13 +45,13 @@
     "typecheck": "tsc -b"
   },
   "devDependencies": {
-    "@ocavue/eslint-config": "^4.0.0",
+    "@ocavue/eslint-config": "^4.6.0",
     "@ocavue/tsconfig": "^0.7.1",
     "@types/node": "^24.0.0",
-    "eslint": "^10.0.0",
-    "prettier": "^3.8.1",
+    "eslint": "^10.4.0",
+    "prettier": "^3.8.3",
     "tsdown": "^0.22.2",
     "typescript": "^6.0.3",
-    "vitest": "^4.0.0"
+    "vitest": "^4.1.6"
   }
 }
